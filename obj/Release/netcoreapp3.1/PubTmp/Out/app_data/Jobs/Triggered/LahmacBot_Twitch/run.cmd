@@ -1,0 +1,1 @@
+dotnet LahmacBot_Twitch.dll %*

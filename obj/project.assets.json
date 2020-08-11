@@ -3336,11 +3336,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Users\\Lahmacunity\\source\\repos\\LahmacBot_Twitch\\LahmacBot_Twitch\\LahmacBot_Twitch.csproj",
+      "projectUniqueName": "D:\\Users\\Lahmacunity\\source\\repos\\LahmacBot_Twitch\\LahmacBot_Twitch\\LahmacBotTwitch\\LahmacBot_Twitch.csproj",
       "projectName": "LahmacBot_Twitch",
-      "projectPath": "D:\\Users\\Lahmacunity\\source\\repos\\LahmacBot_Twitch\\LahmacBot_Twitch\\LahmacBot_Twitch.csproj",
+      "projectPath": "D:\\Users\\Lahmacunity\\source\\repos\\LahmacBot_Twitch\\LahmacBot_Twitch\\LahmacBotTwitch\\LahmacBot_Twitch.csproj",
       "packagesPath": "C:\\Users\\Lahmacunity\\.nuget\\packages\\",
-      "outputPath": "D:\\Users\\Lahmacunity\\source\\repos\\LahmacBot_Twitch\\LahmacBot_Twitch\\obj\\",
+      "outputPath": "D:\\Users\\Lahmacunity\\source\\repos\\LahmacBot_Twitch\\LahmacBot_Twitch\\LahmacBotTwitch\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",

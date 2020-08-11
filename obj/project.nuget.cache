@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WT8HWvp0BmR212HsxqqZLsGscgjPga8mpQUxwAcMwr0VEw89kTWJxL2FGVYYQHsAOyoYhnxB+/HOTtlGbwT2NQ==",
+  "dgSpecHash": "06kqpHCzHgb4b87FffifaqGEjphVwgyV5fTNrt5xxBTpsgcod/LMNBlAlNWTcdQ9oZvysHoTykhF7gPl4X+lRg==",
   "success": true,
-  "projectFilePath": "D:\\Users\\Lahmacunity\\source\\repos\\LahmacBot_Twitch\\LahmacBot_Twitch\\LahmacBot_Twitch.csproj",
+  "projectFilePath": "D:\\Users\\Lahmacunity\\source\\repos\\LahmacBot_Twitch\\LahmacBot_Twitch\\LahmacBotTwitch\\LahmacBot_Twitch.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.extensions.logging.abstractions\\2.2.0\\microsoft.extensions.logging.abstractions.2.2.0.nupkg.sha512",
