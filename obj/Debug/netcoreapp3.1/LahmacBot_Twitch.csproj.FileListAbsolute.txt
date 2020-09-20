@@ -62,3 +62,5 @@ D:\Users\Lahmacunity\source\repos\LahmacBot_Twitch\LahmacBot_Twitch\LahmacBotTwi
 D:\Users\Lahmacunity\source\repos\LahmacBot_Twitch\LahmacBot_Twitch\LahmacBotTwitch\obj\Debug\netcoreapp3.1\LahmacBot_Twitch.dll
 D:\Users\Lahmacunity\source\repos\LahmacBot_Twitch\LahmacBot_Twitch\LahmacBotTwitch\obj\Debug\netcoreapp3.1\LahmacBot_Twitch.pdb
 D:\Users\Lahmacunity\source\repos\LahmacBot_Twitch\LahmacBot_Twitch\LahmacBotTwitch\obj\Debug\netcoreapp3.1\LahmacBot_Twitch.genruntimeconfig.cache
+D:\Users\Lahmacunity\source\repos\LahmacBot_Twitch\LahmacBot_Twitch\LahmacBotTwitch\bin\Debug\netcoreapp3.1\Settings.job
+D:\Users\Lahmacunity\source\repos\LahmacBot_Twitch\LahmacBot_Twitch\LahmacBotTwitch\obj\Debug\netcoreapp3.1\LahmacBot_Twitch.SpotifyInfo.resources

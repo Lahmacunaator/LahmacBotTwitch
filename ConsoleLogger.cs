@@ -14,7 +14,7 @@ namespace LahmacBot_Twitch
         public void ErrorLog(string message)
         {
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine($"❗{message}❗");
+            Console.WriteLine($@"❗{message}❗");
             Console.ForegroundColor = ConsoleColor.White;
         }
 
@@ -36,7 +36,7 @@ namespace LahmacBot_Twitch
         {
             Console.ForegroundColor = ConsoleColor.Black;
             Console.BackgroundColor = ConsoleColor.Yellow;
-            Console.Write($"[{sender}]: \t");
+            Console.Write($@"[{sender}]: 	");
             Console.ForegroundColor = ConsoleColor.DarkRed;
             Console.WriteLine(message);
             Console.ForegroundColor = ConsoleColor.White;

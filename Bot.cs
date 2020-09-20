@@ -1,5 +1,9 @@
 ﻿using System;
+using System.Linq;
+using System.Threading.Tasks;
 using TwitchLib.Client;
+using TwitchLib.Api;
+using TwitchLib.Api.Core;
 using TwitchLib.Client.Events;
 using TwitchLib.Client.Models;
 
@@ -9,12 +13,17 @@ namespace LahmacBot_Twitch
     {
         ConnectionCredentials credentials = new ConnectionCredentials(TwitchInfo.ChannelName, TwitchInfo.BotToken);
         private TwitchClient _client;
+        private TwitchAPI _api;
         private ConsoleLogger _logger = new ConsoleLogger();
 
         public void Connect(bool isLogging)
         {
             _client = new TwitchClient();
             _client.Initialize(credentials, TwitchInfo.ChannelName);
+            _api = new TwitchAPI();
+
+            _api.Settings.ClientId = TwitchInfo.ChannelName;
+            _api.Settings.AccessToken = TwitchInfo.BotToken;
 
             if (isLogging)
             {
@@ -34,17 +43,10 @@ namespace LahmacBot_Twitch
 
         private void Client_OnChatCommandReceived(object sender, OnChatCommandReceivedArgs e)
         {
-            switch (e.Command.CommandText.ToLower())
-            {
-                case "sa":
-                    _client.SendMessage(TwitchInfo.ChannelName, "as"); 
-                    break;
-            }
-
-            if (e.Command.ChatMessage.IsModerator || e.Command.ChatMessage.DisplayName == TwitchInfo.ChannelName)
-            {
-                if (e.Command.CommandText.Contains("blop")) _client.SendMessage(TwitchInfo.ChannelName, "blop");
-            }
+            var command = e.Command.CommandText.ToLower();
+            var messageSender = e.Command.ChatMessage.DisplayName;
+            var argumentList = e.Command.ArgumentsAsList;
+            CommandHandler.HandleCommands(_client, command, _api, messageSender, argumentList);
             
         }
 
@@ -54,7 +56,7 @@ namespace LahmacBot_Twitch
 
             if (e.ChatMessage.Message.ToLower().Contains("show feet"))
             {
-                _client.SendMessage(TwitchInfo.ChannelName, "onlyfans.com");
+                CommandHandler.ShowFeet(_client);
             }
         }
 
